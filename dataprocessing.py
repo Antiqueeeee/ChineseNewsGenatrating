@@ -11,9 +11,9 @@ def data_reading(text_path,label_path):
     data = [{"text":k,"label":v}for k,v in zip(text,label)]
     return data
 
-train_corpus = data_reading("./LCSTS/train.src.txt","./LCSTS/train.tgt.txt")
-dev_corpus = data_reading("./LCSTS/valid.src.txt","./LCSTS/valid.tgt.txt")
-test_corpus = data_reading("./LCSTS/test.src.txt","./LCSTS/test.tgt.txt")
+train_corpus = data_reading("./data/train.src.txt","./LCSTS/train.tgt.txt")
+dev_corpus = data_reading("./data/valid.src.txt","./LCSTS/valid.tgt.txt")
+test_corpus = data_reading("./data/test.src.txt","./LCSTS/test.tgt.txt")
 
 
 class model(torch.nn.Module):
