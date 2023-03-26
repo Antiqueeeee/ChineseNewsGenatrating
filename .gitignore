@@ -28,7 +28,9 @@ share/python-wheels/
 MANIFEST
 
 #self-made
-.idea/*
+.idea/
+data/
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
