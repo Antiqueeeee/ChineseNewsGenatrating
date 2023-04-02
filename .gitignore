@@ -30,6 +30,8 @@ MANIFEST
 #self-made
 .idea/
 data/
+output_dir/
+runs/
 
 
 # PyInstaller
