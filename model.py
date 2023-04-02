@@ -3,9 +3,9 @@ from transformers.modeling_gpt2 import GPT2PreTrainedModel,GPT2Model
 from torch import nn
 from torch.nn import CrossEntropyLoss
 
-class GPT2LMHeadMODEL(GPT2PreTrainedModel):
+class GPT2LMHeadModel(GPT2PreTrainedModel):
     def __init__(self,config):
-        super(GPT2LMHeadMODEL, self).__init__(config)
+        super(GPT2LMHeadModel, self).__init__(config)
         self.transformer = GPT2Model(config)
         self.lm_head = nn.Linear(config.n_embd,config.vocab_size,bias=False)
         self.init_weights()
